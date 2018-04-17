@@ -1,0 +1,71 @@
+\documentclass[article,12pt,onesidea,4paper,english,brazil]{abntex2}
+
+\usepackage{lmodern, indentfirst, nomencl, color, graphicx, microtype, lipsum}			
+\usepackage[T1]{fontenc}		
+\usepackage[utf8]{inputenc}		
+
+\setlrmarginsandblock{2cm}{2cm}{*}
+\setulmarginsandblock{2cm}{2cm}{*}
+\checkandfixthelayout
+
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+
+\SingleSpacing
+
+\begin{document}
+	
+	\selectlanguage{brazil}
+	
+	\frenchspacing 
+	
+	\begin{center}
+		\LARGE DESENVOLVIMENTO DE ROBÔ PARA SIMULAR A ORDENHA DE VACAS NA COMPETIÇÃO BRASILEIRA DE ROBÓTICA.\footnote{ Trabalho realizado dentro da área de robótica com financiamento do DEPESP.}
+		
+		\normalsize
+		José Henrique dos Santos Nogueira\footnote{Bolsista, Pesquisa, henriquenogueira96@outlook.com, Campus Porto Velho Calama.} 
+		Samuel Clementino de Oliveira Rocha\footnote{Bolsista, Pesquisa, samuelclementino@live.com, Campus Porto Velho Calama.} 
+	Rafael Pitwak Machado Silva\footnote{ Orientador, rafael.pitwak@ifro.edu.br, Campus Porto Velho Calama.} 
+		Willians de Paula Pereira\footnote{ Co-orientador, willians.pereira@ifro.edu.br, Campus Porto Velho Calama.} 
+	\end{center}
+	
+	% resumo em português
+	\begin{resumoumacoluna}
+		Este projeto tem como meta apresentar as soluções, estratégias e principais características do robô a ser desenvolvido para a Competição Brasileira de Robótica – CBR 2016 sob as regras determinadas para a categoria IEEE OPEN considerando os resultados dos estudos da equipe TAMBAQUI DIGITAL do Grupo de pesquisa GPMetrônica do IFRO- Campus Porto Velho Calama.
+		
+		\vspace{\onelineskip}
+		
+		\noindent
+		\textbf{Palavras-chave}: Robótica. Agropecuária. Qualidade do leite.
+	\end{resumoumacoluna}
+	
+	\section*{Introdução}
+	
+	Este projeto descreve o desafio proposto pela CBR na categoria IEEE – Open 2016 e a solução encontrada pela equipe TAMBAQUI DIGITAL. A CBR traz os problemas da sociedade para dentro da competição, com o objetivo de desafiar os jovens alunos a proporem novas soluções que sanem tais questões. Sendo que o objetivo principal é melhorar a qualidade dos alimentos e deixá-los livres de pesticidas e quanto aos animais, livres de hormônios, além de reduzir os maus tratos dos animais em fase de produção. O desafio proposto visa que o robô desenvolvido pela equipe obtenha o refratário na sua zona específica, depois localize e ordenhe a vaca ainda no pasto, coletando o máximo de leite possível. Após isso retornando à sala anterior e despejando o conteúdo do refratário no tanque de leite. No intuito de buscar uma solução ao desafio proposto, será utilizado um robô que se adapte aos ambientes estabelecidos pelo desafio, com habilidades diversas para melhorar o desempenho em níveis de dificuldades designados pela competição.
+	
+	\section*{Material e Método}
+	
+	Os pesquisadores, primeiramente, estudaram conceitos básicos a respeito do Raspberry Pi, Open CV, reconhecimento facial e linguagem de Programação Python para poder começar a fase de produção do robô que, se inicia na criação do chassi, onde vão construir a estrutura do mesmo. A próxima etapa será integrar os motores e sensores no chassi do robô e em seguida, fará alguns testes em cada componente do robô, e após isso, começa a fase de programação, onde será aplicada a lógica de algoritmo, onde o robô identificará objetos por meio da Câmera Pi. E por último, será aplicada a visão computacional com os demais sensores do robô e testes finais serão feitos para que o robô cumpra a tarefa com sucesso e eficiência. A etapa final será fundamental para o sucesso do projeto, a dedicação e comprometimento de cada membro da equipe são de extrema importância.
+	
+	\section*{Resultados e Discussão}
+	
+	Com esse projeto se espera atender a demanda de elaboração dos robôs, além de contribuir para o aperfeiçoamento na qualidade dos alimentos e deixá-los livres de pesticidas e com relação aos animais, livres de hormônios, e por fim, diminuir os maus tratos dos animais em fase de produção. Por meio da visão computacional, o robô pode identificar e determinar as coordenadas das vacas no pasto dos copos e do tanque de deposição do leite através da busca de padrões como formas geométricas especificas e quadriculados com cores contrastantes (branco e preto), e identificar os obstáculos e guia das trajetórias de cada robô. A integração entre agropecuária e robótica contribui para o avanço da tecnologia através da criação de uma plataforma robótica onde criará métodos eficientes para aperfeiçoar atividades rurais.
+	
+	\section*{Conclusões}
+	
+Quando se refere à inovação com tecnologia, é pensar em investir num futuro com possibilidades de sempre fazer e receber o melhor. Essa tarefa a ser cumprida pelo robô da equipe Tambaqui Digital não é diferente, a eficiência de uma automação na ordenha de animais leiteiros traz consigo pontos positivos quando se refere à:
+3
+otimização do processo, produtos que chegarão ao consumidor com maior qualidade, produtividade aumentada e acima de tudo, sem prejudicar o animal submetido. O uso da visão computacional será peça-chave na performance durante o reconhecimento de padrões de imagem no cumprimento da tarefa solicitada. O desafio proporciona um nível significativo de dedicação, comprometimento e espírito de equipe ao trabalhar em prol do mesmo objetivo, o futuro.
+
+\section*{Agradecimentos}
+Agradecimento maior aos familiares pela compreensão da ausência dos integrantes da equipe para realização do projeto. Obrigado pela colaboração em forma de conhecimento dos professores Rafael Pitwak e Willians de Paula. Do grande suporte financeiro e estrutural do IFRO e do GPMecatrônica.
+	
+	\section*{Instituição de Fomento}
+	
+DEPESP
+	
+	\section*{Referências}
+	
+	\noindent Competition, IEEE Students Latin American Robotics. Rules of the Open category 2016- 2017. March de 2016.
+	
+\end{document}

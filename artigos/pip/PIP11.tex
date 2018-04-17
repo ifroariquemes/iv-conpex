@@ -1,0 +1,93 @@
+
+\documentclass[article,12pt,onesidea,4paper,english,brazil]{abntex2}
+
+\usepackage{lmodern, indentfirst, nomencl, color, graphicx, microtype, lipsum}			
+\usepackage[T1]{fontenc}		
+\usepackage[utf8]{inputenc}		
+
+\setlrmarginsandblock{2cm}{2cm}{*}
+\setulmarginsandblock{2cm}{2cm}{*}
+\checkandfixthelayout
+
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+
+\SingleSpacing
+
+\begin{document}
+	
+	\selectlanguage{brazil}
+	
+	\frenchspacing 
+	
+	\begin{center}
+		\LARGE DESENVOLVIMENTO DE ESTAÇÃO PARA MONITORAMENTO DA INCIDÊNCIA DE RAIOS UV NA CIDADE DE VILHENA – RO UTILIZANDO MICRO CONTROLADOR DE BAIXO CUSTO.\footnote{Trabalho realizado dentro das Ciências Exatas e da Terra com financiamento do IFRO/Campus Vilhena.}
+		
+		\normalsize
+		Jhennifer Kovaleski Pereira\footnote{Bolsista (PIP), jhenniferkovaleski@gmal.com, Campus Vilhena.} 
+		Roberto Simplício Guimarães\footnote{ Colaborador(a), roberto.simplicio@ifro.edu.br, Campus Vilhena.} 
+	Gleiser Rodrigues de Melo\footnote{ Orientador(a), Gleiser.melo@ifro.edu.br, Campus Vilhena.} 
+		Melquisedeque da Conceição Lima\footnote{Co-orientador(a), melquisedeque.lima@ifro.edu.br, Campus Vilhena.} 
+	\end{center}
+	
+	% resumo em português
+	\begin{resumoumacoluna}
+	Esta pesquisa se baseia na exploração e obtenção de dados climáticos, relativos aos raios ultravioletas, temperatura e umidade na cidade de Vilhena – RO. Na coleta de dados utilizou-se de um micro controlador de arquitetura aberta - arduino, cujos sensores e periféricos compatíveis são de baixo custo, com integração e programação simplificada. O registro dos dados é feito através de cartão de memória obtendo-se temperatura, umidade, índice UV, data e hora que irão compor uma espécie de diário, onde, após coletados e tabulados serão feitas as inferências sobre tais condições climáticas. A estrutura em alumínio da estação e a integração da maior parte dos componentes foram realizadas, não atingindo a fase de coleta em campo, devido a problemas técnicos apresentados pelo sensor.	
+		
+		\vspace{\onelineskip}
+		
+		\noindent
+		\textbf{Palavras-chave}: Raios UV. Arduino. Estação de monitoramento.
+	\end{resumoumacoluna}
+	
+	\section*{Introdução}
+	
+	A exposição do ser humano à luz solar é necessária, o que se tem discutido repetidamente sobre essa questão são os riscos que a demasiada exposição à radiação solar pode causar ao ser humano. O que muitos não conhecem, ou conhecem, porém não se importam, é que a composição da luz emitida pelo sol, não gera apenas a sensação de calor. As ondas de raios ultravioletas que estão presentes na radiação solar podem variar de “mocinho a vilão”.
+	Diante de tantos dados expostos por órgãos e instituições responsáveis por questões ambientais, surgiu o questionamento, em nível de micro região, de qual seriam os índices de raios UV que atingem a cidade de Vilhena – RO, que sendo considerada uma cidade de clima agradável, pode-se pressupor que a probabilidade de risco de câncer de pele e problemas de visão é baixa, por não ter níveis térmicos elevados, uma vez que no senso comum, os raios UV estão atrelados ao calor.
+	Com o propósito de responder esses questionamentos, propõe-se o desenvolvimento de uma estação de monitoramento dos níveis de incidência de raios UV e da temperatura ao longo dos meses.
+	
+	\section*{Material e Método}
+	
+O sol é uma potente fonte de energia, com importância para inúmeros sistemas biológicos, seja para o processo de fotossíntese nas plantas, ou no processo de sintetização da vitamina D no corpo humano, como afirma Campos et al (2003) “Uma adequada exposição aos raios solares ultravioleta é necessária para a produção de vitamina D a partir de seu precursor 17- deidrocolesterol, presente na gordura e na pele. A exposição solar deve ser diretamente na pele”. 
+
+\begin{citacao}
+	O espectro solar que atinge a superfície terrestre é formado predominantemente por radiações ultravioletas (100–400 nm), visíveis (400–800 nm) e infravermelhas (acima de 800 nm). Nosso organismo percebe a presença destas radiações do espectro solar de diferentes formas. A radiação infravermelha (IV) é percebida sob a forma de calor, a radiação visível (Vis) através das diferentes cores detectadas pelo sistema óptico e a radiação ultravioleta (UV) através de reações fotoquímicas (FLOR; DAVOLOS. P. 153, 2007).
+\end{citacao}
+	
+	Flor e Davolos (2007) destacam que no caso dos seres humanos, por mais que a recepção de raios solares tenha influencia positiva na saúde, a exposição aos raios ultravioletas por longos períodos pode trazer sérios riscos, como por exemplo, o câncer de pele. Há ainda a possibilidade da ocorrência de mutações genéticas, e comportamentos anormais das células.
+	Com o propósito de analisar os fatores supracitados, propõe-se o desenvolvimento de uma estação de monitoramento dos níveis de incidência de raios UV e da temperatura ao longo dos meses. Objetivando monitorar os níveis de raios UV e temperaturas atingidas das 06h00min da manhã as 18h00min, durante alguns meses (a priori um ano completo). O armazenamento desses dados e o
+	3
+	processamento destes servirão para gerar uma média dos índices alcançados no dia, em cada mês e em cada estação do ano, pois se subtende que somente no verão é que se devem tomar precauções com a exposição ao sol.
+	Seguindo uma linha exploratória, a metodologia será baseada na busca da consolidação de entendimento sobre o problema, bem como do mecanismo que deverá ser construído com suas especificidades visando a obtenção de dados fidedignos. Para a plena execução da metodologia, o método adotado será o de busca e revisão de literaturas nas áreas da pesquisa, tentando elucidar dúvidas e conseguir alcançar todo o embasamento teórico necessário tanto sobre o tema radiação solar, quanto ao desenvolvimento de dispositivos programáveis em micro controlador de código aberto, caracterizando uma pesquisa de cunho bibliográfico, bem com de características empíricas.
+	Durante a fase de coleta de dados, será elaborada uma programação para que o dispositivo faça uma leitura dos indicies de UV e da temperatura de hora em hora, durante o período de aproximadamente um ano, onde, a ideia é que seja feita uma média dos índices durante o período matutino e do período vespertino separando por meses. Paralelamente a essa etapa será confeccionada uma planilha para futura alimentação dos dados, realizando a leitura, interpretação dos dados e coletados através de gráficos.
+	
+	\section*{Resultados e Discussão}
+	
+	Por se tratar de um hardware de código aberto, e pelo preço acessível, o micro controlador e os sensores utilizados facilita a implementação e confecção dessa estação de coleta de dados, pois outros insumos podem ser reaproveitados, ou adquiridos a baixo custo. O processo de confecção da estação foi realizado no laboratório de manutenção de computadores, por haver bancadas apropriadas e ferramentas para trabalhar com equipamentos eletrônicos. A estação foi produzida de maneira mais portátil possível, facilitando o deslocamento, caso haja necessidade.
+	A coleta de dados foi automatizada e a localidade foi definida, por questões de segurança, viabilizando possíveis manutenções. A priori a proposta foi alocar a
+	4
+	estação no quintal do coordenador do projeto e da bolsista, porém, em sua maioria os testes foram feitos no quintal da casa da bolsista.
+	Realizar medições desses índices em uma determinada localidade durante todo o ano é interessante, uma vez que conhecer a região em sua particularidade fornece um arcabouço de dados para setores como agricultura, piscicultura, saúde, entre outros, onde a influencia da exposição de raios UV no sistema em questão é um fator importante, ou simplesmente para manter a população alerta sobre os níveis em tempo real, ou até mesmo registrar algum pico do índice que seja atípico aquela localidade, podendo ser um indicador de que algo está acontecendo com aquele local.
+	Em definitivo as coletas de dados não foram realizadas de maneira integrada e em tempo integral, uma vez que os valores obtidos pelo sensor UV deixou dúvidas quanto a sua fidedignidade por depender de conversão para índices UV, que foi uma maneira encontrada pelos cientistas para abstrair cálculos complexos, dificultando tal análise por não ter um aparelho comercial e homologado para realizar o comparativo. Na progressão da confecção da estação está faltando a integração de todos os sensores para registro dos dados em cartão SD e a acomodação do sistema de alimentação autossuficiente de célula fotovoltaica na estrutura, já confeccionada em alumínio, que será fixada em local amplo no campus.
+	
+	\section*{Conclusões}
+	
+	A ideia de monitorar os índices de raios UV na cidade de Vilhena, juntamente com a temperatura, também servirá de amparo nas argumentações de discussões sobre ficar exposto sem proteção solar em dias não tão quentes, não oferece risco, uma vez que o sol não está visível, o que é um equívoco muito cometido. Outros setores podem utilizar esses dados para aprimorarem seus processos, como por exemplo, na piscicultura que utiliza o fator de oxigenação da água, onde esse processo é feito também por organismos que utilizam os raios UV para sintetizar o oxigênio.
+	Outro ponto importante desse trabalho é a automação de tais medições, pois os medidores de raios UV disponíveis no mercado não necessariamente possuem preços exorbitantes nos modelos mais básicos, porém não é comum ou não
+	5
+	possuem a função de programação para várias medições em longos períodos de tempo. Espera-se também poder replicar a estação a fim de conseguir dados em nível de estado, visando assim traçar o histórico de incidência de raios UV no estado de Rondônia.
+	
+	\section*{Agradecimentos}
+	Agradecemos ao Instituto Federal de Rondônia, Campus Vilhena através do Departamento de Pesquisa - DEPESP.
+	
+	\section*{Instituição de Fomento}
+	
+	Instituto Federal de Educação, Ciência e Tecnologia de Rondônia-IFRO, Campus- Vilhena.Texto IF se houver.
+	
+	\section*{Referências}
+	
+\noindent CAMPOS, Lúcia M. A. et al . \textbf{Osteoporose na infância e na adolescência}. J. Pediatr. (Rio J.), Porto Alegre , v. 79, n. 6, Nov. 2003 . Available from . access on 29 Mar. 2015
+
+\noindent FLOR, Juliana; DAVOLOS, Marian Rosaly; CORREA, Marcos Antonio. \textbf{Protetores solares}. Quím. Nova, São Paulo , v. 30, n. 1, Feb. 2007 . Disponível em:
+<http://www.scielo.br/scielo.php?script=sci\_arttext\&pid=S0100- 40422007000100027\&lng=en\&nrm=iso> . Acesso em: 18 Mar. 2015.
+\end{document}
