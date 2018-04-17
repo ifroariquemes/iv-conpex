@@ -1,6 +1,6 @@
 \documentclass[article,12pt,onesidea,4paper,english,brazil]{abntex2}
 
-\usepackage{lmodern, indentfirst, nomencl, color, graphicx, microtype, lipsum, textcomp}			
+\usepackage{lmodern, indentfirst, nomencl, color, graphicx, microtype, lipsum, textcomp, newfloat}			
 \usepackage[T1]{fontenc}		
 \usepackage[utf8]{inputenc}		
 
@@ -12,6 +12,8 @@
 \setlength{\parskip}{0.2cm}
 
 \SingleSpacing
+
+\DeclareFloatingEnvironment[fileext=qud,listname={Lista de Quadros},placement={!ht},name=Quadro]{quadro}
 
 \begin{document}
 
@@ -48,7 +50,9 @@ O sistema de navegação GPS é uma das tecnologias mais usadas atualmente, seja
 	\section*{Material e Método}
 	
 O experimento foi realizado no campo experimental do Centro Universitário Luterano de Ji-Paraná (CEULJI/ULBRA) localizado no município de Ji-Paraná-RO com a coordenada geográfica pelo paralelo de latitude 10º 51’ 40,32” S em sua intersecção com o meridiano de longitude 61º 57’ 34,56” W, estando a uma altitude de 175 metros conforme Figura 1.
+
 Para realização do presente estudo foi utilizado um aparelho GPS de navegação Garmin Etrex 20 e demais matérias de auxilio no levantamento.
+
 Foram realizadas medições em dias alternados com o auxílio do GPS navegação com os tempos de 0 e 5 minutos com três repetições realizadas nos dias 18, 19 e 28 de maio de 2015 sempre no mesmo horário as 15:00 h.
 
 	\begin{figure}[h]
@@ -59,7 +63,7 @@ Foram realizadas medições em dias alternados com o auxílio do GPS navegação
 
 Depois de realizados os levantamentos de campo, os dados coletados com aparelho GPS foram descarregados em um microcomputador com auxílio do programa GPS TRACKMAKER usado na elaboração do mapeamento das áreas e processamento dos dados gravados conforme tabelas abaixo.
 
-\begin{table}[h]
+\begin{quadro}[h]
 	\centering
 	\caption{Coordenadas levantadas a campo com o tempo de 0 minuto de estabilização e gravação}
 	\label{my-label}
@@ -76,9 +80,9 @@ Depois de realizados os levantamentos de campo, os dados coletados com aparelho 
 		\multicolumn{1}{|c|}{6}      & 613865,323     & 8799147,060    & 613866,425     & 8799149,821    & 613861,065     & 8799148,623    \\ \hline
 		\multicolumn{1}{|c|}{7}      & 613821,993     & 8799102,973    & 613822,110     & 8799105,295    & 613819,918     & 8799103,422    \\ \hline
 	\end{tabular}
-\end{table}
+\end{quadro}
 
-\begin{table}[!h]
+\begin{quadro}[!h]
 	\centering
 	\caption{Coordenadas levantadas a campo com o tempo de 5 minutos de estabilização e gravação.}
 	\label{my-label}
@@ -95,7 +99,7 @@ Depois de realizados os levantamentos de campo, os dados coletados com aparelho 
 		6      & 613866,089     & 8799147,389    & 613866,098     & 8799150,043    & 613862,704     & 8799148,396    \\ \hline
 		7      & 613824,404     & 8799104,624    & 613822,660     & 8799106,178    & 613820,034     & 8799105,413    \\ \hline
 	\end{tabular}
-\end{table}
+\end{quadro}
 
 O cálculo da área foi realizado através de planilha eletrônica Excel com a formulação das células baseadas na fórmula do cálculo de áreas de GAUSS, utilizando as coordenadas limites de cada área.
 
@@ -105,42 +109,44 @@ O cálculo da área foi realizado através de planilha eletrônica Excel com a f
 	O primeiro ponto demarcado com o GPS localizado no Centro Universitário Luterano de Ji-Paraná.
 	Os resultados dos levantamentos efetuados se encontram nos quadros 3 e 4. 
 	
-	\begin{table}[h]
+	\begin{quadro}[h]
 		\centering
 		\caption{Dados processados para o levantamento a campo com o tempo de 0 minuto de estabilização e gravação.}
 		\label{my-label}
+		\footnotesize
 		\begin{tabular}{|c|c|c|c|c|c|}
 			\hline
-			DATA                                                              & PERIMETRO (m)         & ÁREA (m²)             & ÁREA (ha) DIFERENÇA   & (ha) DIFERENÇA        & (m2)                  \\ \hline
-			18.05.2015	455                                                    & 455,57                & 8.646,7365            & 0,8647                & -                     & -                     \\ \hline
+			DATA                                                              & PERIMETRO (m)         & ÁREA (m²)             & ÁREA (ha) DIFERENÇA   & (ha) DIFERENÇA        & (m²)                  \\ \hline
+			18.05.2015	                                                    & 455,57                & 8.646,7365            & 0,8647                & -                     & -                     \\ \hline
 			\begin{tabular}[c]{@{}c@{}}18.05.2015 a\\ 19.05.2015\end{tabular} & 454,87                & 8656,1169             & 0,8656                & 0,0009                & 9                     \\ \hline
 			\begin{tabular}[c]{@{}c@{}}19.05.2015 a\\ 2.05.2015\end{tabular}  & 453,10                & 8.684,0215            & 0,8684                & 0,0028                & 28                    \\ \hline
 		\end{tabular}
-	\end{table}
+	\end{quadro}
 	
-	No Quadro 3 o resultado que apresentou maior diferença encontrada nos levantamentos a campo foi entre os dia 19.05.2015 e o dia 28.05.2015 com 28 m2.
+	No Quadro 3 o resultado que apresentou maior diferença encontrada nos levantamentos a campo foi entre os dia 19.05.2015 e o dia 28.05.2015 com 28 m².
 	
-	\begin{table}[h]
+	\begin{quadro}[h]
 		\centering
 		\caption{Dados processados para o levantamento a campo com o tempo de 5 minutos de estabilização e gravação.}
 		\label{my-label}
+		\footnotesize
 		\begin{tabular}{|c|c|c|c|c|c|}
 			 \hline
-			DADOS                                                             & PERIMETRO (m) & ÁREA (m²)  & ÁREA (ha) DIFERENÇA & (ha) DIFERENÇA & (m2)  \\ \hline
+			DADOS                                                             & PERIMETRO (m) & ÁREA (m²)  & ÁREA (ha) DIFERENÇA & (ha) DIFERENÇA & (m²)  \\ \hline
 			18.05.2015                                                        & 453,86        & 8.336,0619 & 0,8336              & -              & -     \\ \hline
 			\begin{tabular}[c]{@{}l@{}}18.05.2015 a\\ 19.05.2015\end{tabular} & 454,88        & 8.744,0635 & 0,8744              & 0,0408         & 408   \\ \hline
 			\begin{tabular}[c]{@{}l@{}}19.05.2015 a\\ 28.05.2015\end{tabular} & 452,44        & 8.401,7102 & 0,8402              & -0,0342        & -342  \\ \hline
 		
 		\end{tabular}
-	\end{table}
+	\end{quadro}
 
-No Quadro 4 o resultado que apresentou maior diferença encontrada nos levantamentos a campo foi entre os dia 18.05.2015 e o dia 19.05.2015 com 408 m2.
+No Quadro 4 o resultado que apresentou maior diferença encontrada nos levantamentos a campo foi entre os dia 18.05.2015 e o dia 19.05.2015 com 408 m².
 Após avaliação, os resultados demonstraram que existe diferença na localização espacial dos pontos coletados com o aparelho GPS. Esta variação resulta numa diferença na sobreposição dos mapas gerados nas três coletas, bem como gera aumento ou decréscimo nos valores das áreas calculadas.
 
 	
 	\section*{Conclusões}
 	
-	Os melhores resultados encontrados neste trabalho com o uso de sistema de posicionamento global – GPS foram para o levantamento em tempo real, 0 minutos, sendo a diferença maior encontrada nos três dias de levantamento de 28 m2.
+	Os melhores resultados encontrados neste trabalho com o uso de sistema de posicionamento global – GPS foram para o levantamento em tempo real, 0 minutos, sendo a diferença maior encontrada nos três dias de levantamento de 28 m².
 	
 	\section*{Instituição de Fomento}
 	
