@@ -1,0 +1,602 @@
+\documentclass[a4paper,12pt,twoside,onesidepapers,%
+  electronic,% [printed] | electronic
+  papers=final,% empty | draft | [final] | countpages
+  headers=allpages,% none | pdfonly | exceptpdf | [allpages]
+  %paperselec=all, %[all] |  | p_fake
+	onecoltoc,
+	tocnum=right,
+	twocolindex,
+	movepagenumber=true,%
+hyperref={bookmarksdepth=1,bookmarksopen,bookmarksopenlevel=0,%
+ linkcolor=black,urlcolor=blue}, % [blue, blue, blue]
+  geometry={text={175truemm,226truemm},% A4 & letter
+    inner=0.69in,top=25mm,bottom=28mm,footskip=10.4mm,voffset=0mm},%A4	
+]{confproc}
+  
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage[super]{nth}
+\usepackage{xparse}
+\usepackage{layout, setspace}
+
+\renewcommand{\procpdfauthor}{{Instituto Federal de Rondônia}}
+\renewcommand{\procpdftitle}{{IV CONPEX - Congresso de Pesquisa, Ensino e Extensão}}
+\renewcommand{\procpdfsubject}{{IV CONPEX, 04 a 06 de Outubro de 2016, Porto Velho, Rondônia}}
+
+\renewcommand{\procchead}{} %
+\renewcommand{\proclhead}{{\em \small \procpdfsubject}}
+
+\renewcommand{\contentsname}{\LARGE Índice}
+
+\renewcommand{\procday}[1]{%
+	\phantomsection%
+	\renewcommand{\proclhead}{}
+	\renewcommand{\procchead}{\small \procpdftitle \\ {#1}}	
+	\addcontentsline{toc}{part}{#1}}
+
+\author{\procpdfauthor}
+\title{\procpdftitle}
+\renewcommand{\PAPERPATH}{../artigos/}
+\makeindex
+
+\begin{document}
+\frontmatter
+\setcounter{page}{1}
+\pdfbookmark[0]{Preâmbulo}{preambulo}
+
+\include{capa.tex}
+
+\include{folha-de-rosto.tex}
+
+\include{editorial.tex}
+
+\include{comite.tex}
+
+\tableofcontents
+
+\renewcommand{\proccfoot}{}
+\renewcommand{\procrfoot}{\small\thepage}
+\rfoot{\procrfoot}
+\pagestyle{fancyplain}
+
+\mainmatter
+	
+\procday{Desafios da Educação Profissional -- Integração do Ensino, Pesquisa e Extensão para o\\ Desenvolvimento Socioeconômico e Cultural de Rondônia}
+
+	\session{Resumos}
+	
+		\procpaper[
+			npages=1,
+			title={ANÁLISE SENSORIAL DE BISCOITO DE CUPUAÇU COM MEL},
+			author={Jhennifer Stefany Teles Gonçalves, Tais Pamela Marcadelli da Silva,
+				Daise dos Santos, Antonio Bisconsin-Junior}
+		]{pip/pip-01}
+		
+		\procpaper[
+		npages=1,
+		title={PRÁTICA DE VEGETAIS MINIMAMENTE
+			PROCESSADOS INTEGRADA À ATIVIDADE
+			PEDAGÓGICA NA AGROINDÚSTRIA DO IFRO
+			CAMPUS COLORADO DO OESTE – RO},
+		author={Donizete Alves de Lima Júnior, Josiane Capellaro Varela, Nélio Ranieli Ferreira de Paula}
+		]{pip/pip-155}
+		
+		\procpaper[
+		npages=1,
+		title={QUALIDADE MICROBIOLÓGICA DA GOMA DE
+			MANDIOCA PRODUZIDA EM RONDÔNIA},
+		author={Bruna Naielly Kloos Oliveira, Fabiana Pereira Sampaio, Antonio Bisconsin-Junior}
+		]{pip/pip-166}	
+		
+		\procpaper[
+			npages=1,
+			title={SILAGEM DE COPRODUTO DA INDÚSTRIA DE
+				PALMITO BABAÇU COMBINADA COM DIFERENTES
+				ADITIVOS ABSORVENTES PARA
+				ALIMENTAÇÃO DE RUMINANTES},
+			author={Jaqueline C. Scaramussa, Gabriel S. Stoinski, Luciane C. Codognoto, Thassiane T. Conde}
+		]{pip/pip-171}	
+	
+	\session{Artigos Completos}
+	
+		\procpaper[
+			npages=3,
+			title={ANALISE SOCIOAMBIENTAL DA
+				PRAÇA DOS MIGRANTES, JI-PARANÁ/RO},
+			author={Dayane Rodrigues Raasch, Elizeu Ribeiro da Silva Neto, Elizeu Ribeiro da Silva Neto}
+		]{pip/pip-02}
+		
+		\procpaper[
+			npages=3,
+			title={APLICANDO A TEORIA NA PRÁTICA – UM ESTUDO
+				DE CASO NA SECRETARIA MUNICIPAL DE SAÚDE
+				DE PORTO VELHO - RO},
+			author={Maria Genilda Batista da Silva, Reuria da Silva Moreira,
+				Adonias Soares da S. Júnior, Sandra Sena Reis}
+		]{pip/pip-03}
+		
+		\procpaper[
+			npages=3,
+			title={ATIVIDADES FÍSICAS HABITUAIS DE ALUNOS DO
+				ENSINO BÁSICO, TÉCNICO E TECNOLÓGICO},
+			author={Nícolas Costa Freitas, Iranira Geminiano de Melo, George Madson Dias Santos}
+		]{pip/pip-04}
+		
+		\procpaper[
+			npages=4,
+			title={AVALIAÇÃO DE APARELHO GPS NAVEGAÇÃO
+				GARMIN ETREX 20 EM RELAÇÃO À MEDIÇÃO DE
+				ÁREA NO CENTRO UNIVERSITARIO LUTERANO DE
+				JI-PARANÁ – CEULJI/ULBRA – RO},
+			author={Dayane Rodrigues Raasch, Selma Maria de Arruda Silva}
+		]{pip/pip-05}
+		
+		\procpaper[
+			npages=5,
+			title={BIOPROSPECÇÃO DE RALSTONIA
+				SOLANACEARUM: IDENTIFICAÇÃO AVALIAÇÃO
+				DA ATIVIDADE ANTIMICROBIAL DE
+				MICRORGANISMOS ENDOFÍTICOS},
+			author={Mateus Barbizan, Daniela Barbizan, Odair Antonio Barbizan,
+				Nélio Ferreira, Raniele Ferreira de Paula}
+		]{pip/pip-06}
+		
+		\procpaper[
+			npages=4,
+			title={BORBOLETAS FRUGÍVORAS (LEPIDOPTERA:
+				NYMPHALIDAE) OCORRENTES NO
+				REMANESCENTE FLORESTAL DO INSTITUTO
+				FEDERAL DE RONDÔNIA – CAMPUS ARIQUEMES},
+			author={Pedro Paulo Machado Nascimento, Estéfano Gambarini Monteiro, Renata Alves de Sousa,
+				Gisele Renata de Castro, Elaine Oliveira Costa de Carvalho}
+		]{pip/pip-07}
+		
+		\procpaper[
+			npages=3,
+			title={CONCENTRAÇÃO DE PIGMENTOS
+				FOTOSSINTÉTICOS EM ESPÉCIES VEGETAIS DE UM
+				TRECHO DE FLORESTA ESTACIONAL
+				SEMIDECIDUAL, NO MUNICÍPIO DE
+				COLORADO DO OESTE/RO},
+			author={Caroline Alves Lima, Matheus Henrique Brandão, Anderson Pereira da Silva,
+				Carolina Ferreira Galvão de Holanda, Jéssica Danila Krugel}
+		]{pip/pip-08}
+		
+		\procpaper[
+			npages=4,
+			title={CONSTRUÇÃO DE JOGOS COMO FERRAMENTA DE
+				ENSINO E APRENDIZAGEM DE MATEMÁTICA
+				APLICADO AO ENSINO TÉCNICO EM FLORESTAS},
+			author={Isabella Navarro da Silva, Letícia Midori Suganuma, Érica Patrícia Navarro, Andreza Mendonça}
+		]{pip/pip-09}
+		
+		\procpaper[
+			npages=3,
+			title={DESCENDENTES DA LÁSTIMA: GRUPOS
+				NEONAZISTAS NA SOCIEDADE CONTEMPORÂNEA},
+			author={Karine Medeiros Anselmo, Herisson Galescky Torres, Sérgio Nunes de jesus}
+		]{pip/pip-10}
+		
+		\procpaper[
+			npages=4,
+			title={DESENVOLVIMENTO DE ESTAÇÃO PARA
+				MONITORAMENTO DA INCIDÊNCIA DE RAIOS UV
+				NA CIDADE DE VILHENA – RO UTILIZANDO MICRO
+				CONTROLADOR DE BAIXO CUSTO},
+			author={Jhennifer Kovaleski Pereira, Roberto Simplício Guimarães,
+				Gleiser Rodrigues de Melo, Melquisedeque da Conceição Lima}
+		]{pip/pip-11}
+		
+		\procpaper[
+			npages=2,
+			title={DESENVOLVIMENTO DE ROBÔ PARA SIMULAR A
+				ORDENHA DE VACAS NA COMPETIÇÃO
+				BRASILEIRA DE ROBÓTICA},
+			author={José Henrique dos Santos Nogueira, Samuel Clementino de Oliveira Rocha,
+				Rafael Pitwak Machado Silva, Willians de Paula Pereira}
+		]{pip/pip-12}
+		
+		\procpaper[
+			npages=4,
+			title={DESENVOLVIMENTO DE SISTEMA DE AVALIAÇÃO
+				DA CONDIÇÃO FÍSICA DE ESTUDANTES DO ENSINO
+				BÁSICO, TÉCNICO E TECNOLÓGICO},
+			author={Miguel Amadio de Oliveira, Iranira Geminiano de Melo, George Madson Dias Santos}
+		]{pip/pip-13}
+		
+		\procpaper[
+			npages=3,
+			title={EFEITO DE EXTRATOS DE PLANTAS MEDICINAIS
+				DO ESTADO DE RONDÔNIA SOBRE A
+				GERMINAÇÃO DE SEMENTES},
+			author={Leonardo Colombo Paniagua, Aline Santiago,
+				Camila Ferreira Abrão, Tatiane de Abreu Curado Rezende}
+		]{pip/pip-14}
+		
+		\procpaper[
+			npages=4,
+			title={EFICIÊNCIA DE MÉTODOS DE EXTRAÇÃO
+				DE POTÁSSIO PARA SOLOS DO CONE SUL
+				DE RONDÔNIA},
+			author={Ivanildo Guilherme Henrique, Daniela Souza Silva,
+				Magno Batista Amorin, Fabio Batista de Lima}
+		]{pip/pip-15}
+		
+		\procpaper[
+			npages=4,
+			title={ELABORAÇÃO DE UMA MÁQUINA DE
+				SOLDA ELÉTRICA COMO INSTRUMENTO DE
+				ENSINO PARA DISCENTES},
+			author={Diego Leônidas Esplendo Vieira, Gabriel Felipe de Andrade Oliveira, João Roberto Bond da Silva,
+				Paulo César Macedo, Ronaldo Pozzobom}
+		]{pip/pip-66}
+		
+		\procpaper[
+			npages=5,
+			title={OS BENEFÍCIOS PEDAGÓGICOS DO
+				JOGO DE XADREZ},
+			author={Leonardo Castilho Cardozo, Henrique Dalle Luque Barbosa dos Santos, Francisco Roberto da Silva de Carvalho, Alexandre Thomé da Silva de Almeida}
+		]{pip/pip-132}
+		
+		\procpaper[
+			npages=11,
+			title={PARÂMETROS FÍSICO-QUÍMICOS E
+				MICROBIOLÓGICOS NO RIO MACHADO NAS
+				IMEDIAÇÕES DA CIDADE DE JI-PARANÁ – RO},
+			author={Rodrigo Barros de Oliveira, Ingrid Ferreira Chagas Soneguete, Luís Fernando Lira Souto, Valério Magalhães Lopes}
+		]{pip/pip-137}
+		
+		\procpaper[
+			npages=3,
+			title={POLÍTICAS PÚBLICAS DE MOBILIDADE URBANA: A
+				REESTRUTURAÇÃO POLÍTICA E ECONÔMICA E OS
+				IMPACTOS SOCIAIS E TERRITORIAIS},
+			author={Daiana Cavalcante Gomes, Jenerson Queiroz Lima Duarte,
+				Maria Beatriz Souza Pereira, Marcilei Serafim Germano}
+		]{pip/pip-151}
+		
+		\procpaper[
+		npages=4,
+		title={PRODUÇÃO DE MORANGOS AUXILIADA PELA
+			TECNOLOGIA ARDUÍNO PARA EXERCER O
+			CONTROLE DE HUMIDADE DO SOLO,
+			DO AR E DA TEMPERATURA},
+		author={Bruno Rover Dal Prá, Eberson Taynan Tomazelli, José Leonardo Alves Leite}
+		]{pip/pip-156}
+		
+		\procpaper[
+		npages=4,
+		title={PRODUÇÃO DE VINHO A PARTIR DE CAJÁ-MANGA
+			(SPONDIAS DULCIS)},
+		author={Juliana Alves Rodrigues, José Antonio Avelar Baptista, Renato Ándre Zan}
+		]{pip/pip-161}
+		
+		\procpaper[
+		npages=4,
+		title={QUALIDADE MICROBIOLÓGICA DE PRODUTOS
+			HORTIFRUTIGRANJEIROS COMERCIALIZADO NA
+			FEIRA LIVRE DO MUNICÍPIO DE
+			COLORADO DO OESTE/RO},
+		author={Caroline Alves Lima, Matheus Henrique Brandão, Nélio Ranieli Ferreira de Paula}
+		]{pip/pip-167}
+		
+		\procpaper[
+		npages=4,
+		title={SISTEMA DE INFORMAÇÃO GERENCIAL: ANÁLISE
+			DO SISTEMA UTILIZADO NA SECRETARIA DE
+			PLANEJAMENTO, ORÇAMENTO E GESTÃO –
+			SEPOG/RO},
+		author={Daiana Cavalcante Gomes, Jenerson Queiroz Lima Duarte,
+			Angelina Maria de Oliveira Licorio, Ronilson Oliveira}
+		]{pip/pip-173}
+		
+		\procpaper[
+		npages=4,
+		title={SOPH - PORTO ORGANIZADO DE PORTO VELHO:
+			ANÁLISE DA DEMANDA DE MAQUINÁRIO
+			UTILIZADO PARA O TRANSPORTE E/OU
+			ARMAZENAMENTO DAS CARGAS},
+		author={Daiana Cavalcante Gomes, Jenerson Queiroz Lima Duarte,
+			Diego da Cruz Lopes, Adonias Soares da Silva Junior}
+		]{pip/pip-178}
+		
+		\procpaper[
+		npages=4,
+		title={TECNOLOGIA E MANEJO DO COCO, ESPÉCIE DE
+			USO MÚLTIPLO DA AMAZÔNIA},
+		author={Carla Karoline Cruz Pereira, Luiz Carlos Rezende Nunes, Andreza Mendonça,
+			Alice Sperandio Porto, Maria Elessandra R. Araújo}
+		]{pip/pip-183}
+		
+		\procpaper[
+		npages=4,
+		title={GARIMPO BOM FUTURO, BREVE ESTUDO DE CASO
+			DA EXPLORAÇÃO DA CASSITERITA NO
+			MUNICÍPIO DE ARIQUEMES},
+		author={Francisco Clayton N. da Cunha, Esiomar Andrade S. Filho, Denise Ton Tiussi}
+		]{pip/pip-188}
+		
+		\procpaper[
+		npages=3,
+		title={ESTUDOS DOS HABITOS ALIMENTARES DE
+			ESTUDANTES DO ENSINO BÁSICO,
+			TECNICO E TECNOLÓGICO},
+		author={Fernanda Lima e Silva, Danielle Menezes Marrieli, Iranira Geminiano de Melo, Célio José Borges}
+		]{pip/pip-artigo5}
+		
+		\procpaper[
+		npages=3,
+		title={GEOTECNOLOGIA APLICADA NA LOCAÇÃO E
+			IDENTIFICAÇÃO DE ÁRVORES NA
+			PRAÇA DOS MIGRANTES, JI-PARANÁ/RO},
+		author={Juliana Campos Curitiba}
+		]{pip/pip-artigo06}
+		
+		\procpaper[
+		npages=2,
+		title={IDENTIDADE CULTURAL},
+		author={Alana Beatriz Casarotto, Kamila Ambrozio Rodrigues, Thalita Kathiusk Xavier Cardoso}
+		]{pip/pip-artigo07}
+		
+		\procpaper[
+		npages=4,
+		title={INFORMÁTICA E SOCIEDADE:
+			UMA ANÁLISE DO PPC DO CURSO TÉCNICO DE
+			INFORMÁTICA DO IFRO – CAMPUS PORTO VELHO},
+		author={Lucas Matheus Ferreira Martins, Xênia de Castro Barbosa,
+			Gisele Caroline Nascimento dos Santos}
+		]{pip/pip-artigo08}
+		
+		\procpaper[
+		npages=4,
+		title={INFORMÁTICA E SOCIEDADE: UMA LEITURA DO
+			PROBLEMA DA EVASÃO ESCOLAR},
+		author={Italo Jeferson da Silva Brito, Xênia de Castro Barbosa, Gisele Caroline Nascimento dos Santos}
+		]{pip/pip-artigo09}
+		
+		\procpaper[
+		npages=4,
+		title={INVENTÁRIO CENSO QUALI-QUANTITATIVO DA
+			ARBORIZAÇÃO DA AVENIDA JI-PARANÁ NA
+			CIDADE DE JI-PARANÁ – RO},
+		author={Jefferson Uere P. da Costa, Carlos Momo, Guilherme B. de Azevedo}
+		]{pip/pip-artigo10}
+		
+		\procpaper[
+		npages=3,
+		title={MÍDIA E POLÍTICA:
+			RONDÔNIA NAS PÁGINAS DA REVISTA VEJA},
+		author={Wdmial Gabriela Borges Romanini, Allonya Peixoto da Silva}
+		]{pip/pip-artigo11}
+		
+		\procpaper[
+		npages=4,
+		title={NOVAS TECNOLOGIAS PARA O ENSINO DE
+			BIOLOGIA: A HISTOLOGIA NA REDE},
+		author={Luciano Vieira Pereira, Bárbara Severo Jacob, Estéfane Oliveira de Moraes,
+			Jardson Yudi Ikenohuchi, Giselle Cavalcante Saldanha,
+			Willians de Paula Pereira, Elisangela Bibá Gomes Pinho}
+		]{pip/pip-artigo12}
+		
+		\procpaper[
+		npages=3,
+		title={O USO DE ÁLCOOL E DROGAS
+			NAS ESCOLAS DE PORTO VELHO},
+		author={Luís Henrique Amaro Véras, Laura Raisa de Carvalho, Eloisa Silva de Jesus,
+			Emily Ingrid Bader de Souza Rômer, Natália Thais Bukoski Silva, Lais Souza Pinto}
+		]{pip/pip-artigo13}
+		
+		\procpaper[
+		npages=4,
+		title={ORIGEM E ANSEIOS DO ALUNO DO CURSO
+			TÉCNICO EM AGROPECUÁRIA DO
+			IFRO – CÂMPUS ARIQUEMES},
+		author={Bianca Lauane Santana de Melo, Mayko da Silva Fernandes,
+			Quezia da Silva Rosa, Fernando Alves da Silva}
+		]{pip/pip-artigo14}
+		
+		\procpaper[
+		npages=4,
+		title={ENSINO E APRENDIZAGEM EM FÍSICA UTILIZANDO
+			O GOOGLE SKETCHUP PHYSICS},
+		author={Matheus Felipe de Souza e Silva, Gabriel Pereira da Silva, Caio Afonso Côgo Oliveira,
+			Natã da Silva Stedile, Átila Bezerra de Mira, Juliano Alves de Deus}
+		]{pip/pip-pg70}
+		
+		\procpaper[
+		npages=3,
+		title={ESTÁGIO DE MUDANÇA DE COMPORTAMENTO
+			PARA REALIZAÇÃO DE ATIVIDADE FÍSICA},
+		author={Maria Vitória Dunice Pereira, Iranira Geminiano Melo}
+		]{pip/pip-pg75}
+		
+		\procpaper[
+		npages=4,
+		title={ESTUDO SOBRE EVASÃO NOS CURSOS À
+			DISTÂNCIA E PRESENCIAL DO IFRO- CÂMPUS
+			PORTO VELHO ZONA NORTE},
+		author={Daiana Cavalcante Gomes, Maria Beatriz Souza Pereira, Lady Day Pereira de Souza, Dinalva Barbosa da Silva Fernandes}
+		]{pip/pip-pg78}
+		
+\procday{I Mostra de Práticas Exitosas de Ensino}
+	
+		\procpaper[ npages=1,
+		title={ANÁLISE QUANTITATIVA E QUALITATIVA DOS	RESIDUOS RESIDENCIAIS E COMERCIAS RECICLADOS NA CIDADE DE JI-PARANÁ – RO},
+		author={Aline Soares Dormiro Claudino, Maria Clara Da Costa Fernandes, Érica Patrícia Navarro, Andreza Mendonça, Alice Sperandio Porto}
+		]{ensino/ensino-01}
+		
+		\procpaper[ npages=1,
+		title={FOTOS VIVAS SOBRE A TORTURA NO PERÍODO DA DITADURA MILITAR},
+		author={André Luís Monteiro Ferreira Lopes},
+		]{ensino/ensino-02}			
+
+		\procpaper[
+			npages=1,
+			title={APRENDENDO GEOMETRIA ANALÍTICA
+				COM O GEOGEBRA},
+			author={Antônio Sérgio F. dos Santos, Ederson da Silva Bressanini}
+		]{ensino/ensino-03}
+		
+		\procpaper[
+			npages=1,
+			title={SEUS OLHOS SÃO MEUS OLHOS},
+			author={Edson Gomes Marinho Júnior, Tatiana de Abreu Curado Rezende, Joacir Aparecido Lourenzoni}
+		]{ensino/ensino-04}
+		
+		\procpaper[
+			npages=1,
+			title={RECRIANDO OS LUSÍADAS EM HQ},
+			author={Elaine Rodrigues Nichio}
+		]{ensino/ensino-05}
+		
+		\procpaper[
+			npages=1,
+			title={APRIMORANDO MÉTODOS COM MATERIAIS
+				SIMPLES: UMA APRENDIZAGEM DE ÓTICA-REFLEXÃO DA LUZ COM ESPELHOS PLANOS},
+			author={Geisiele Aparecida Barbosa, Renan Santos Pimentel, Mauro Guilherme Ferreira Bezerra, Fabricio Araújo Sousa}
+		]{ensino/ensino-06}
+		
+		\procpaper[
+			npages=1,
+			title={QUALIDADE DE VIDA NO AMBIENTE DE
+				TRABALHO NO IFRO},
+			author={Geiza Mendonça, Ângela Dalmolini, Milene Coelho, Lady Day Pereira de Souza}
+		]{ensino/ensino-07}
+		
+		\procpaper[
+			npages=1,
+			title={RELATO DE EXPERIÊNCIA DA IMPLANTAÇÃO DO
+				MODELO ENSINO BASEADO EM
+				PROBLEMAS OU PROJETOS},
+			author={Geovane C. S. Pagani, Shalom M. da Silva, Aline A. de Souza,
+				Delmo L. de Araújo, Júlio de S. Marques}
+		]{ensino/ensino-08}
+		
+		\procpaper[
+			npages=1,
+			title={PRÁTICA DE VEGETAIS MINIMAMENTE
+				PROCESSADOS INTEGRADA À ATIVIDADE
+				PEDAGÓGICA NA AGROINDÚSTRIA DO IFRO
+				CAMPUS COLORADO DO OESTE – RO},
+			author={Donizete Alves de Lima Júnior, Josiane Capellaro Varela, Nélio Ranieli Ferreira de Paula}
+		]{ensino/ensino-09}
+		
+		\procpaper[
+			npages=1,
+			title={DESENVOLVIMENTO DE PROJETO SOB A
+				METODOLOGIA P.B.L’S – GRUPO ABAQUAR –
+				QUELÔNIOS DO MÉDIO MADEIRA},
+			author={Ludmylla Sanchez, Bruno Barros, Diones dos Santos, Daiana Ayala, Dayana Gonçalves, Eliezer Silva Sergio Junior, Sergio Junior, Antônio dos Santos Junior}
+		]{ensino/ensino-10}
+		
+		\procpaper[
+			npages=1,
+			title={PROTÓTIPO DE UM CARRO MOVIDO
+				A ENERGIA SOLAR},
+			author={Marisa Rodrigues Lima, Marlene Urup Tossue, Thais Camila, Eldina Lopes dos Santos}
+		]{ensino/ensino-11}
+	
+		\procpaper[
+			npages=1,
+			title={PVC TRIGONOMÉTRICO},
+			author={Matheus Mendes dos Santos Lipinski, Gabriel Ernanes Alves Feitosa,
+				Maria Gabriela Baim Gonzaga, Gessica Stefany Alves Setúbal,
+				Eliciana da Conceição Silva dos Santos, Adel Rayol de Oliveira Silva}
+		]{ensino/ensino-12}
+		
+		\procpaper[
+			npages=1,
+			title={ENSINO DE FÍSICA INTEGRADO À ROBÓTICA
+				EDUCACIONAL: CORRIDA DE ROBÔS},
+			author={Mirian Rodrigues Pedrosa, Izabela Vieira Lima de Oliveira, Kelverton Willes,
+				Mauro Guilherme Ferreira Bezerra, Willians de Paula Pereira}
+		]{ensino/ensino-13}
+		
+		\procpaper[
+			npages=1,
+			title={A PRODUÇÃO DE MATERIAL DIDÁTICO
+				MANIPULÁVEL PARA O ENSINO DE BIOLOGIA},
+			author={Luana Fernandes de Almeida, Tatiana de Abreu Curado Rezende}
+		]{ensino/ensino-14}
+		
+		\procpaper[
+			 npages=1,
+			 title={PRÁTICAS EXITOSAS NO ENSINO DE CIÊNCIAS DA
+			 	NATUREZA E TERRA E SUAS TECNOLOGIAS NO
+			 	CAMPUS VILHENA},
+			 author={Marisa Rodrigues de Lima, Leonardo Pereira da Silva, Tatiana Abreu Curado Rezende, Melquisedeque da Conceição Lima}
+		]{ensino/ensino-15}
+		
+		\procpaper[
+			npages=1,
+			title={RAIZ FORTE: UM DRONE DE BAIXO CUSTO},
+			author={Juliane Martinez Galiano, Rafaella David de Souza, Vitoria Santos Ferreira}
+		]{ensino/ensino-16}
+		
+		\procpaper[
+			npages=1,
+			title={REAPROVEITAMENTO DE SACOLAS PLÁSTICAS NA
+				CONFECÇÃO DE OBJETOS DECORATIVOS/UTILITÁRIOS E APLICAÇÃO DE
+				CÁLCULO DE ÁREA},
+			author={Claudinei de Oliveira Pinho, Marlene Urup Tossue, Valdir José Alves, Gleiciane Ferreira de Souza}
+		]{ensino/ensino-17}
+		
+		\procpaper[
+			npages=1,
+			title={GRUPO DE PESQUISA PRÁTICAS DISCURSIVAS NA
+				AMAZÔNIA EM AÇÕES INTERDISCIPLINARES:
+				ENSINO, PESQUISA E EXTENSÃO},
+			author={Sérgio Nunes de Jesus, Neila Giron, Fernanda Giron Moreira}
+		]{ensino/ensino-18}
+
+\procday{V Mostra de Extensão}
+
+		\procpaper[
+			npages=1,
+			title={CIÊNCIA BÁSICA NO ENFRENTAMENTO A
+				DEPENDÊNCIA QUÍMICA PARA ASSOCIAÇÃO
+				RESGATE DE VIDAS E SEU ENTORNO SOCIAL},
+			author={Wêmilly Cristina Reis Teixeira, Weliton do Nascimento Alexandre,
+				Fernanda Rodrigues de Siqueira, Alexandre Machado da Silva, Ana Maria de Paula Cordeiro,
+				Alice Cristina Souza Lacerda Melo Souza}
+		]{extensao/extensao-01}
+		
+		\procpaper[
+			npages=1,
+			title={ESCRITÓRIO MODELO DO INSTITUTO FEDERAL
+				DE RONDÔNIA – EMIFRO},
+			author={Luiza Souza, Suely Schneider, Allan Augusto, Antônio Junior}
+		]{extensao/extensao-02}
+		
+		\procpaper[
+			npages=1,
+			title={ROBÓTICA PARA TODOS},
+			author={Álvaro Victor de Oliveira Aguiar, Bryan da Silva Moreira, Davi Pereira Rossell,
+				Angelo Maggioni e Silva, Rogério Lopes Vieira Cesar}
+		]{extensao/extensao-03}
+		
+		\procpaper[
+			npages=1,
+			title={TREINAMENTO ESPORTIVO NO
+				CAMPUS ARIQUEMES},
+			author={Amisley G. Araujo, Juliano V. Cenci}
+		]{extensao/extensao-04}
+		
+		\procpaper[
+			npages=1,
+			title={CONTADORES DE HISTÓRIAS},
+			author={Karina Almeida André, Andreia dos Santos Oliveira}
+		]{extensao/extensao-05}
+		
+		\procpaper[
+			npages=1,
+			title={CULTURA, MEMÓRIA E TRADIÇÃO ESTÉTICA:
+				A CONSTRUÇÃO DA CIDADE CENOGRÁFICA DO
+				ARRAIAL DO IFRO CAMPUS JI-PARANÁ},
+			author={Bruna S. Mandu 2 Waldelaine R. Hoffmann 3 Jucielly E. de Almeida, Lourival Inácio Filho}
+		]{extensao/extensao-06}
+
+%%%==== END OF PAPERS ====
+%\backmatter
+\end{document}
