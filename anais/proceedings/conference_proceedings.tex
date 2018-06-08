@@ -1,0 +1,102 @@
+\documentclass[a4paper,11pt,twoside,onesidepapers,%
+  electronic,% [printed] | electronic
+  papers=final,% empty | draft | [final] | countpages
+  headers=allpages,% none | pdfonly | exceptpdf | [allpages]
+  %paperselec=all, %[all] |  | p_fake
+	onecoltoc,
+	%tocnum=right,
+	twocolindex,
+	%movepagenumber=true,%
+hyperref={bookmarksdepth=1,bookmarksopen,bookmarksopenlevel=0,%
+ linkcolor=black,urlcolor=blue}, % [blue, blue, blue]
+  geometry={text={175truemm,226truemm},% A4 & letter
+    inner=0.69in,top=33.9mm,bottom=38mm,footskip=10.4mm,voffset=-4.8mm},%A4	
+]{confproc}
+  
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage[super]{nth}
+
+\renewcommand{\procpdfauthor}{{Instituto Federal de Rondônia}}
+\renewcommand{\procpdftitle}{{IV CONPEX - Congresso de Pesquisa, Ensino e Extensão}}
+\renewcommand{\procpdfsubject}{{IV CONPEX, 04 a 06 de Outubro de 2016, Porto Velho, Rondônia}}
+
+\renewcommand{\procchead}{} %
+\renewcommand{\proclhead}{{\em \small \procpdfsubject}}
+
+\author{\procpdfauthor}
+\title{\procpdftitle}
+% \date{\today}
+\renewcommand{\PAPERPATH}{papers/}
+\makeindex
+
+%%%===========  PROCEEDINGS  ===========
+\begin{document}
+\frontmatter
+\setcounter{page}{1}
+\pdfbookmark[0]{Preamble}{preamble}
+\pdfbookmark[1]{Cover}{cover}
+CAPA
+\newpage
+FOLHA DE ROSTO
+\newpage
+\tableofcontents
+
+\renewcommand{\proccfoot}{}
+\renewcommand{\proccfoot}{\small\thepage}
+\setlength{\procfootvskip}{10mm}
+
+\renewcommand{\procday}[1]{%
+	\phantomsection%
+	\renewcommand{\proclhead}{}
+	\renewcommand{\procchead}{\small \procpdftitle \\ {#1}}	
+	\addcontentsline{toc}{part}{#1}}
+
+%%%==== BEGINNING OF CONFERENCES'S PAPERS ====
+\mainmatter
+	
+\procday{Research Session}
+
+	\session{New challenges in Information Technology}
+	
+		\procpaper[
+		  npages=6,
+		  title={An Investigation of IPv4},%
+		  author={Johh Johhov},%
+		  index={\index{Johnov, Johh}},%
+		]{conference_submission_12}
+		
+		\procpaper[ npages=1,
+		title={ANÁLISE QUANTITATIVA E QUALITATIVA DOS	RESIDUOS RESIDENCIAIS E COMERCIAS RECICLADOS NA CIDADE DE JI-PARANÁ – RO},
+		author={Aline Soares Dormiro Claudino, Maria Clara Da Costa Fernandes, Érica Patrícia Navarro, Andreza Mendonça, Alice Sperandio Porto},
+		index={\index{Claudino, Aline Soares Dormiro} \index{Fernandes, Maria Clara Da Costa}
+			\index{Navarro, Érica Patrícia} \index{Mendonça, Andreza} \index{Porto, Alice Sperandio}},
+		]{ensino_01}
+			
+		\procpaper[
+		  title={RoedWain: Evaluation of the Transistor},%
+		  author={Ken Deuchman, John Englishman and Safman Englishman},%
+		  index={\index{Deuchman, Ken} \index{Englishman, John} \index{Englishman, Safman}},%
+		]{conference_submission_27}
+		
+	\session{Innovations in Information Systems Engineering}
+	
+		\procpaper[
+		  title={Contrasting Spreadsheets and Systems},%
+		  author={Ivan Musterman, Paul Randomman and Amir Mahmoudman},%
+		  index={\index{Musterman, Ivan}
+				\index{Randomman, Paul}
+				\index{Mahmoudman, Amir}},%
+		]{conference_submission_43}
+		
+	\session{New trends in Automation and Robotics}
+  
+	
+\procday{Student Session}
+
+
+%%%==== END OF PAPERS ====
+\backmatter
+\insertindex
+\end{document}
