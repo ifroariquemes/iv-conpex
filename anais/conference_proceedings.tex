@@ -51,24 +51,25 @@ CAPA
 \newpage
 
 %%%%%%%%%%%% FOLHA DE ROSTO %%%%%%%%%%%%%
-\vspace *{1.7cm}
+\vspace*{\fill}
 \pdfbookmark[1]{Informações da Publicação}{publicacao}
 \thispagestyle{empty}
-\noindent {\bf Published by:}\\ Laboratory Name\\ Department name\\
-School Name\\ University Name\\
-\url{http://www.conferencesite.com}\\
-\vspace*{0.15cm}\newline
-\noindent {\bf ISBN: X-XXXX-XXXXXX}\\
-\vspace*{0.35cm}\newline
-\noindent Printed in City by Print-Company --- Month Year
+\noindent \begin{tabular}{|p{\linewidth}|}
+	\hline
+	\textbf{Ficha catalográfica} \\
+	{\bf ISBN: X-XXXX-XXXXXX}\\
+	\hline
+\end{tabular}
+
 \newpage
 
 %%%%%%%%%%%% EDITORIAL %%%%%%%%%%%%%
 
-\vspace*{0.6cm}
+\vspace*{\fill}
+
 \pdfbookmark[1]{Editorial}{editoria}
 \section*{\centering \normalfont \LARGE EDITORIAL}
-\vspace*{0.6cm}
+\vspace*{0.6in}
 \doublespace
 
 \begin{center}
@@ -79,35 +80,53 @@ School Name\\ University Name\\
 		Text of the welcome letter, with 2 lines spacing, blah blah...
 	\end{minipage}
 \end{center}
+
+\vspace*{\fill}
+
 \singlespace
 \newpage
 
 %%%%%%%%%%%% COMITE %%%%%%%%%%%%%
 
-\vspace*{0.6cm}
+\vspace*{\fill}
+
 \pdfbookmark[1]{Comitê de Programa}{comite}
 \section*{\centering \normalfont \LARGE COMITÊ DE PROGRAMA}
-\vspace*{0.6cm}
+\vspace{0.6in}
 \doublespace
 
+\begin{center}
+
+\begin{multicols}{2}
+
 \noindent \textbf{COMISSÃO ORGANIZADORA}
+\vspace{0.1in}
 
 GIMAR ALVES LIMA JUNIOR
 
 NATANAEL AUGUSTO VIANA SIMÕES
 
-SHYRLEY DE ALMEIDA ALVES \\
+SHYRLEY DE ALMEIDA ALVES
 
 \noindent \textbf{COORDENAÇÃO GERAL}
+\vspace{0.1in}
 
 GIMAR ALVES LIMA JUNIOR
 
 MARIA GORETH ARAÚJO REIS
 
-MOISÉS JOSÉ ROSA SOUZA \\
+MOISÉS JOSÉ ROSA SOUZA
+
+\end{multicols}
+
+\vspace*{0.2in}
 
 \noindent \textbf{COMITÊ CIENTÍFICO}
 
+\begin{multicols}{2}
+
+\begin{flushright}
+	
 GILMAR ALVES LIMA JÚNIOR
 
 SOLIMÁRIA PEREIRA LIMA
@@ -126,6 +145,10 @@ RAFAEL PAES DE BARRO
 
 DENISE CIDADE CAVALCANTI
 
+\end{flushright}
+
+\begin{flushleft}
+
 CLEDENICE BLACKMAN
 
 SANDRA ARALDI RODRIGUES
@@ -142,13 +165,30 @@ FERNANDA OLIVEIRA COSTA DE GÓES
 
 DIEGO CARLOS DE OLIVEIRA FERREIRA
 
-MICHELE NOÉ
+MICHELE NOÉ 
+
+\end{flushleft}
+
+\end{multicols}
+
+\vspace*{0.2in}
 
 \noindent \textbf{DIAGRAMAÇÃO}
+\vspace{0.1in}
 
-(ESTUDANTES
+FÁBIO HENRIK GALVÃO BRANCO
+
+KRISTIAN DA SILVA BERNARD
+
+LUCAS DE MOURA RODRIGUES
+
+LEONARDO DOS SANTOS CALEGARI
 
 NATANAEL AUGUSTO VIANA SIMÕES
+
+\end{center}
+
+\vspace*{\fill}
 
 \singlespace
 \newpage
